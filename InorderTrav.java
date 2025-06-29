@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class InorderTrav{
 
     public static void inorderTrav(TreeNode root){
@@ -14,6 +16,16 @@ public class InorderTrav{
     }
 
 
+   
+    public static void inorder_Iterative(TreeNode root ){
+
+      
+
+    }
+
+
+
+
     public static void main(String[] args) {
         
         CreateBT cb   = new CreateBT();
@@ -23,11 +35,6 @@ public class InorderTrav{
 
         inorderTrav(root);
 
-
-
-
-
-        
         
     }
 

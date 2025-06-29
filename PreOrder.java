@@ -1,4 +1,25 @@
+import java.util.Stack;
+
 public class PreOrder {
+
+
+    public static void preorder_Iterative(TreeNode root ){
+
+        Stack<TreeNode> stack  = new Stack<>();
+        stack.push(root);
+
+        while(!stack.isEmpty()){
+            TreeNode node  = stack.pop();
+            System.out.println(node.data);
+            if(node.right != null){
+                stack.push(node.right);
+            }
+            if(node.left != null){
+                stack.push(node.left);
+            }
+        }
+
+    }
 
 
     public static void preOrder(TreeNode root){
@@ -13,6 +34,7 @@ public class PreOrder {
         
 
     }
+
 
     public static void main(String[] args) {
          CreateBT cb   = new CreateBT();
