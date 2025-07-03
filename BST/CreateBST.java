@@ -32,7 +32,7 @@ public class CreateBST {
 
 
         inorder(root.left);
-        System.out.println(root.data);
+        System.out.print (root.data +" ");
         inorder(root.right  );
     }
 
